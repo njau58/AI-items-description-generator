@@ -200,7 +200,7 @@ const FormContainer = () => {
           Output
         </label>
         <textarea
-          rows={itemDescription === "" ? 8 : itemDescription?.split("\\n").length + 12}
+          rows={itemDescription === "" ? 8 : itemDescription.split("\\n").length + 12}
           name="output"
           onChange={(e) => setItemDescription(e.target.value)}
           value={itemDescription}

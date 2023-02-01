@@ -4,7 +4,7 @@ const generateItemDescription = async ( {itemName, category, numWords, tone, key
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_OPENAI_API_KEY}`,
       },
       body: JSON.stringify({
         prompt: `Write an item description for ${itemName} 
@@ -23,7 +23,7 @@ const generateItemDescription = async ( {itemName, category, numWords, tone, key
 
     const data = await response.json();
 
-
+console.log(data)
 
     return data.choices[0].text;
   } catch (err) {
@@ -34,7 +34,7 @@ const generateItemDescription = async ( {itemName, category, numWords, tone, key
 
 export default async function serviceHandler (req,res){
 
-    
+    console.log(req.body)
 
 
 
