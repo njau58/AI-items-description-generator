@@ -58,12 +58,12 @@ const FormContainer = () => {
 
 
   return (
-    <div className="flex flex-col m-8  space-y-8  md:space-y-0 md:flex-row md:space-x-16 mx-auto justify-center">
+    <div className="flex flex-col m-8  space-y-16  md:space-y-0 md:flex-row md:space-x-16 mx-auto justify-center">
       <div class="">
 
         <form>
           <div class="form-group mb-6">
-            <div className="text-lg text-slate-600 mb-8">
+            <div className="md:text-lg text-slate-600 mb-8 text-base ">
               Create Catchy Item Descriptions for your business in Seconds.
             </div>
             <input
