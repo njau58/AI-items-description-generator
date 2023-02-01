@@ -23,7 +23,7 @@ const generateItemDescription = async ( {itemName, category, numWords, tone, key
 
     const data = await response.json();
 
-//   console.log(itemName)
+
 
     return data.choices[0].text;
   } catch (err) {
@@ -34,7 +34,7 @@ const generateItemDescription = async ( {itemName, category, numWords, tone, key
 
 export default async function serviceHandler (req,res){
 
-    console.log(req.body)
+    
 
 
 
